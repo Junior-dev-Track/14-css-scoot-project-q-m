@@ -1,1 +1,3 @@
-@import "./SCSS/body.scss";
+@import "./SCSS/reset.scss";
+@import "./SCSS/design-system.scss";
+@import "./SCSS/responsive.scss";
