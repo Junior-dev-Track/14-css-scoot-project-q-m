@@ -8,8 +8,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .nav-bar-header {
     display: flex;
     align-items: center;
+
+    .menu {
+      margin: auto 50px;
+
+      a {
+        color: var(--dimGrey);
+        margin: auto 20px;
+        text-decoration: none;
+      }
+    }
   }
 }

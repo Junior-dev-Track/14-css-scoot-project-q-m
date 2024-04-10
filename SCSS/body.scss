@@ -4,7 +4,6 @@
 
 body {
   font-family: "Space Mono", monospace;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,5 +11,12 @@ body {
 
   p {
     font-family: "Lexend Deca", sans-serif;
+  }
+
+  main {
+    img {
+      width: 100px;
+      height: auto;
+    }
   }
 }
