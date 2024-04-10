@@ -1,5 +1,10 @@
 @import "./SCSS/reset.scss";
 @import "./SCSS/design-system.scss";
 @import "./SCSS/body.scss";
+
 @import "./SCSS/responsive.scss";
+
+@import "./SCSS/header/header.scss";
+@import "./SCSS/main/main-index.scss";
+@import "./SCSS/main/main-about.scss";
 @import "./SCSS/footer/footer.scss";

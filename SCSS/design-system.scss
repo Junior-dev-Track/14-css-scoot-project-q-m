@@ -12,6 +12,7 @@
   --dimGrey: #939caa;
   --lightGrey: #e5ecf4;
   --snow: #f2f5f9;
+  --white: #ffffff;
 }
 
 /*
@@ -26,9 +27,21 @@
  * Button:
  */
 .button-yellow {
+  width: 180px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  color: var(--snow);
+  text-decoration: none;
+  border: 2px solid var(--yellow);
+  transition: 0.2s;
 }
 
 .button-yellow:hover {
+  background-color: var(--white);
+  color: var(--yellow);
 }
 
 /*
