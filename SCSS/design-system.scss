@@ -1,8 +1,10 @@
-/* 
- *  DESIGN SYSTEM
+/*
+ * FILE DESIGN SYSTEM
  */
 
-// Colors
+/*
+ * Colors:
+ */
 :root {
   --lightYellow: #fff4df;
   --yellow: #fcb72b;
@@ -12,8 +14,19 @@
   --snow: #f2f5f9;
 }
 
-// Typography
+/*
+ * Typography:
+ */
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 // font-family: "Space Mono", monospace;
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 // font-family: "Lexend Deca", sans-serif;
+
+/*
+ * Button:
+ */
+.button-yellow {
+}
+
+.button-yellow:hover {
+}
