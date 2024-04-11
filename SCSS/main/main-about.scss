@@ -24,14 +24,76 @@ main {
       transform: translateY(-50%);
     }
   }
+
   .card-mobility-for-the-digital {
   }
+
   .card-better-urban-living {
   }
+
   .container-our-values {
+    width: 80%;
+    height: 610px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 80%;
+    gap: 5%;
+
+    h2 {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      text-align: center;
+      font-size: 48px;
+    }
+
+    .card-our-tech {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 5%;
+
+      div:nth-child(1) {
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img:nth-child(1) {
+          width: 240px;
+          height: 240px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+
+      div:nth-child(2) {
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+          text-align: center;
+          font-size: 24px;
+        }
+
+        p {
+          text-align: center;
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
   }
-  .card-our-integrity {
-  }
+
   .card-our-community {
   }
   .container-faqs {

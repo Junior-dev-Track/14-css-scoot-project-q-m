@@ -8,9 +8,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--darkNavy);
 
   p {
     font-family: "Lexend Deca", sans-serif;
+    color: var(--dimGrey);
   }
 
   main {
