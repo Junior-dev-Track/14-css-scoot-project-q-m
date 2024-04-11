@@ -7,4 +7,6 @@
 @import "./SCSS/header/header.scss";
 @import "./SCSS/main/main-index.scss";
 @import "./SCSS/main/main-about.scss";
+@import "./SCSS/main/main-locations.scss";
+@import "./SCSS/main/main-careers.scss";
 @import "./SCSS/footer/footer.scss";
