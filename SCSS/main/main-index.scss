@@ -5,6 +5,7 @@
 main {
   .hero-scooter {
     position: relative;
+
     img {
       width: 100%;
       height: 650px;
@@ -12,6 +13,7 @@ main {
       z-index: -1;
       filter: brightness(50%);
     }
+
     h2 {
       font-size: 56px;
       line-height: 56px;
@@ -21,13 +23,45 @@ main {
       left: 165px;
       color: white;
     }
+
     p {
     }
   }
-  .services-container {
-  }
 
-  .service-app {
+  .services-container {
+    width: 80%;
+    height: 290px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+
+    span.gray-line {
+      z-index: -1;
+      position: absolute;
+      left: -12.5%;
+      top: 15%;
+      width: 80%;
+      height: 16px;
+      background-color: var(--lightGrey);
+    }
+
+    .service-app {
+      width: 350px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
   }
 
   .service-pick {
