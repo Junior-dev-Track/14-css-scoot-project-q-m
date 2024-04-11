@@ -4,8 +4,21 @@
 
 main {
   .hero-locations {
+    position: relative;
     img {
       width: 100%;
+      height: 650px;
+      object-fit: cover;
+      z-index: -1;
+    }
+    h1 {
+      font-size: 156px;
+      line-height: 156px;
+      z-index: 1;
+      position: absolute;
+      top: 250px;
+      left: 120px;
+      color: white;
     }
   }
   .container-locations {
