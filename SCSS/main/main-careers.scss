@@ -5,6 +5,7 @@
 main {
   .hero-careers {
     position: relative;
+
     img {
       width: 100%;
       height: 650px;
@@ -21,18 +22,33 @@ main {
       color: white;
     }
   }
-  .card-our-mission {
-  }
-  .container-our-values {
-  }
-  .card-our-tech {
-  }
-  .card-our-integrity {
-  }
-  .card-our-community {
-  }
+
   .container-jobs {
-  }
-  .card-jobs {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+
+    .card-jobs {
+      background-color: var(--lightGrey);
+      padding: 35px;
+      width: 100%;
+      margin: 10px auto;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h3 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
   }
 }
