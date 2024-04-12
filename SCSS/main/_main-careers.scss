@@ -30,22 +30,29 @@ main {
 
     .card-jobs {
       background-color: var(--lightGrey);
-      // padding: 35px;
+
       width: 100%;
       margin: 10px auto;
-      display: flex;
-      justify-content: space-between;
 
-      div {
+      .card-frame {
+        padding: 40px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
 
-        h3 {
-          font-size: 24px;
-        }
-        p {
-          font-size: 15px;
+        div {
+          height: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          h3 {
+            font-size: 24px;
+          }
+
+          p {
+            font-size: 15px;
+          }
         }
       }
     }
