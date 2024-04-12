@@ -22,6 +22,67 @@ main {
     }
   }
 
+  .card-easy-to-use {
+    width: 100%;
+    position: relative;
+
+    .card-left {
+      width: 80%;
+      margin: 100px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      div:nth-child(1) {
+        width: 40%;
+        height: 315px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+          margin-bottom: 10px;
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 48px;
+        }
+
+        p {
+          margin-bottom: 10px;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+        }
+      }
+
+      div:nth-child(2) {
+        width: fit-content;
+
+        img {
+          width: 445px;
+          height: 445px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .gray-circle {
+      transform: translateX(-10%) scale(1.2);
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .yellow-arrow {
+      position: absolute;
+      right: 0;
+      transform: scale(7) translateX(-43%);
+      bottom: 10%;
+    }
+  }
+
   .container-jobs {
     width: 80%;
     margin: 50px auto;
@@ -30,7 +91,6 @@ main {
 
     .card-jobs {
       background-color: var(--lightGrey);
-
       width: 100%;
       margin: 10px auto;
 

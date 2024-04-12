@@ -3,33 +3,39 @@
  */
 
 main {
-  .hero-scooter {
+  .hero-index {
     position: relative;
 
     img {
+      z-index: -1;
       width: 100%;
       height: 650px;
       object-fit: cover;
-      z-index: -1;
     }
 
     h2 {
+      position: absolute;
+      left: 10%;
+      top: 22%;
+      color: var(--white);
       font-size: 56px;
       line-height: 56px;
-      position: absolute;
-      top: 149px;
-      left: 120px;
-      color: white;
     }
+
     p {
       position: absolute;
-      top: 300px;
-      left: 220px;
+      left: 16%;
+      top: calc(22% + 25%);
+      width: fit-content;
+      color: var(--white);
+      line-height: 25px;
+      font-size: 15px;
     }
+
     a {
       position: absolute;
-      top: 500px;
-      left: 220px;
+      top: calc(22% + 25% + 22%);
+      left: 16%;
     }
   }
 
@@ -69,7 +75,7 @@ main {
     }
   }
 
-  .card {
+  .card-easy-to-use {
     width: 100%;
     position: relative;
 
@@ -116,7 +122,7 @@ main {
     }
 
     .gray-circle {
-      transform: scale(1.2);
+      transform: translateX(-10%) scale(1.2);
       position: absolute;
       top: 0;
       right: 0;
@@ -125,13 +131,131 @@ main {
     .yellow-arrow {
       position: absolute;
       right: 0;
-      transform: scale(7) translateX(-41.5%);
+      transform: scale(7) translateX(-43%);
       bottom: 10%;
     }
   }
+
   .card-coming-to-a-city {
+    width: 100%;
+    position: relative;
+
+    .card-right {
+      width: 80%;
+      margin: 100px auto;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      div:nth-child(1) {
+        width: 40%;
+        height: 315px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+          margin-bottom: 10px;
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 48px;
+        }
+
+        p {
+          margin-bottom: 10px;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+        }
+      }
+
+      div:nth-child(2) {
+        width: fit-content;
+
+        img {
+          width: 445px;
+          height: 445px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .gray-circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(1.2) rotate(180deg);
+    }
+
+    .yellow-arrow {
+      position: absolute;
+      left: 0;
+      top: 5%;
+      transform: scale(3.5) translateX(20%);
+    }
   }
 
-  .card-zero-hassle-payments {
+  .card-zero-hassle {
+    width: 100%;
+    position: relative;
+
+    .card-left {
+      width: 80%;
+      margin: 100px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      div:nth-child(1) {
+        width: 40%;
+        height: 315px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+          margin-bottom: 10px;
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 48px;
+        }
+
+        p {
+          margin-bottom: 10px;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+        }
+      }
+
+      div:nth-child(2) {
+        width: fit-content;
+
+        img {
+          width: 445px;
+          height: 445px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .gray-circle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(-10%) scale(1.2);
+    }
+
+    .yellow-arrow {
+      position: absolute;
+      right: 0;
+      top: 20%;
+      transform: scaleX(-1) scale(3.5) translateX(36%);
+    }
   }
 }
