@@ -1,12 +1,22 @@
 @import "./SCSS/_reset.scss";
 @import "./SCSS/_design-system.scss";
 @import "./SCSS/_body.scss";
-
 @import "./SCSS/_responsive.scss";
 
 @import "./SCSS/header/_header.scss";
-@import "./SCSS/main/_main-index.scss";
-@import "./SCSS/main/_main-about.scss";
-@import "./SCSS/main/_main-locations.scss";
-@import "./SCSS/main/_main-careers.scss";
+@import "./SCSS/header/_header-responsive.scss";
+
+@import "./SCSS/main/_index-main.scss";
+@import "./SCSS/main/_index-responsive.scss";
+
+@import "./SCSS/main/_about-main.scss";
+@import "./SCSS/main/_about-responsive.scss";
+
+@import "./SCSS/main/_locations-main.scss";
+@import "./SCSS/main/_locations-responsive.scss";
+
+@import "./SCSS/main/_careers-main.scss";
+@import "./SCSS/main/_careers-responsive.scss";
+
 @import "./SCSS/footer/_footer.scss";
+@import "./SCSS/footer/_footer-responsive.scss";
