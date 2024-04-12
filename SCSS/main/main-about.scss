@@ -92,68 +92,63 @@ main {
 
   .card-our-community {
   }
+
   .container-faqs {
     width: 80%;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     h2 {
       font-size: 48px;
       text-align: center;
     }
-    div {
-    }
 
     .container-questions {
+      display: flex;
       gap: 30px;
-      display: flex; // correct need to align h4
 
       h3 {
         width: 30%;
         font-size: 40px;
-        margin-top: 65px;
       }
 
       .container-answers {
         width: 70%;
-        margin: 50px auto;
-
-        //display: flex;
-        //flex-direction: column;
-        //justify-content: space-between;
       }
 
       .card-answers {
         background-color: var(--lightGrey);
-        padding: 35px;
         width: 100%;
-        margin: 10px auto;
 
-        div {
-          h4 {
-            display: flex;
-            justify-content: space-between;
-            font-size: 24px;
-            margin-bottom: 20px;
-            //padding: 35px;
+        .card-frame-answer {
+          padding: 35px;
+          margin-bottom: 30px;
 
-            img {
-              width: 32px;
-              height: 16px;
-              transform: rotate(270deg); //down 90deg // 270deg up
-              //filter: contrast(150%);
-            }
-            .arrow-down {
-              transform: rotate(90deg);
+          div {
+            h4 {
+              display: flex;
+              justify-content: space-between;
+              font-size: 24px;
+
+              img {
+                width: 32px;
+                height: 16px;
+                rotate: 90deg;
+              }
             }
           }
-        }
-        p {
-          text-align: justify;
-          font-size: 15px;
-          //padding: 35px;
-          line-height: 25px;
+
+          p {
+            display: none;
+            margin-top: 35px;
+            font-size: 15px;
+            line-height: 25px;
+          }
         }
       }
+
       .card-answers:hover {
         background-color: var(--lightYellow);
       }

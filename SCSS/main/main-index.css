@@ -1,0 +1,116 @@
+/* 
+ * FILE MAIN INDEX
+ */
+main .hero-scooter {
+  position: relative;
+}
+main .hero-scooter img {
+  width: 100%;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+main .hero-scooter h2 {
+  font-size: 56px;
+  line-height: 56px;
+  position: absolute;
+  top: 149px;
+  left: 120px;
+  color: white;
+}
+main .hero-scooter p {
+  position: absolute;
+  top: 300px;
+  left: 220px;
+}
+main .hero-scooter a {
+  position: absolute;
+  top: 500px;
+  left: 220px;
+}
+main .services-container {
+  width: 80%;
+  height: 290px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+}
+main .services-container span.gray-line {
+  z-index: -1;
+  position: absolute;
+  left: -12.5%;
+  top: 15%;
+  width: 80%;
+  height: 16px;
+  background-color: var(--lightGrey);
+}
+main .services-container .service-app {
+  width: 350px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .services-container .service-app h2 {
+  font-size: 24px;
+}
+main .services-container .service-app p {
+  font-size: 15px;
+}
+main .card {
+  width: 100%;
+  position: relative;
+}
+main .card .card-left {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+main .card .card-left div:nth-child(1) {
+  width: 40%;
+  height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .card .card-left div:nth-child(1) h2 {
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+main .card .card-left div:nth-child(1) p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+main .card .card-left div:nth-child(2) {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .card .card-left div:nth-child(2) img {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .card .gray-circle {
+  transform: scale(1.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .card .yellow-arrow {
+  position: absolute;
+  right: 0;
+  transform: scale(7) translateX(-41.5%);
+  bottom: 10%;
+}/*# sourceMappingURL=main-index.css.map */

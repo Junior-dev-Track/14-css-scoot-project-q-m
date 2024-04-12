@@ -1,0 +1,45 @@
+/* 
+ * FILE MAIN CAREERS
+ */
+main .hero-careers {
+  position: relative;
+}
+main .hero-careers img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+main .hero-careers h1 {
+  font-size: 56px;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+main .container-jobs {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+main .container-jobs .card-jobs {
+  background-color: var(--lightGrey);
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+main .container-jobs .card-jobs div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .container-jobs .card-jobs div h3 {
+  font-size: 24px;
+}
+main .container-jobs .card-jobs div p {
+  font-size: 15px;
+}/*# sourceMappingURL=main-careers.css.map */

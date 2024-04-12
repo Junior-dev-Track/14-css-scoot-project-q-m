@@ -1,0 +1,50 @@
+/* 
+ * FILE MAIN LOCATIONS
+ */
+main {
+  width: 100%;
+}
+main .hero-locations {
+  position: relative;
+}
+main .hero-locations img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+main .hero-locations h1 {
+  font-size: 56px;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+main .container-locations {
+  width: 80%;
+  margin: 50px auto;
+}
+main .container-locations div img {
+  width: 100%;
+  height: 545px;
+  margin: 50px auto;
+}
+main .container-locations div div {
+  height: 100px;
+  margin: 0px auto 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container-locations div div h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+main .container-locations div div p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}/*# sourceMappingURL=main-locations.css.map */
