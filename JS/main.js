@@ -1,17 +1,29 @@
-let lastScrollTop = 0;
+/*
+ * EFFECT NAV-BAR SCROLL
+ */
+let lastScrollTop = null;
 
-document.addEventListener(
-  "scroll",
-  () => {
-    let currentScroll = window.scrollY || document.documentElement.scrollTop;
-    if (currentScroll > lastScrollTop) {
-      // Scrolling down
-      document.querySelector("header").style.top = "-150px";
-    } else {
-      // Scrolling up
-      document.querySelector("header").style.top = "0";
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  const dimensionNavBar = 96.6;
+  const screenWidth = 1000;
+
+  let positionScrollY = window.scrollY;
+  let responsive = matchMedia(`(max-width: ${screenWidth}px)`).matches;
+
+  if (responsive) {
+    header.style.top = "0";
+  } else {
+    if (positionScrollY >= dimensionNavBar) {
+      header.style.top = "-100px";
     }
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-  },
-  false
-);
+    if (lastScrollTop !== null && lastScrollTop > positionScrollY) {
+      header.style.top = "0";
+    }
+    lastScrollTop = positionScrollY <= 0 ? 0 : positionScrollY;
+  }
+});
+
+/*
+ * EFFECT CONTAINER FAQS
+ */
