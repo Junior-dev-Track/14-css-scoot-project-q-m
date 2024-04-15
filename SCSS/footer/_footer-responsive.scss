@@ -2,14 +2,69 @@
  * FILE RESPONSIVE DESIGN FOOTER
  */
 
-// Desktop:
-@media screen and (max-width: 1440px) {
-}
-
 // Tablet:
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
+  footer {
+    .footer-up {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      row-gap: 20px;
+
+      h2 {
+        width: 85%;
+        text-align: center;
+      }
+    }
+  }
 }
 
-// Mobile:
+// Mobile & tablet:
+@media screen and (max-width: 768px) {
+  footer {
+    .footer-down {
+      .nav-bar-footer {
+        nav {
+          .menu {
+            a {
+            }
+          }
+        }
+        .social-media-container {
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 375px) {
+  footer {
+    .footer-down {
+      .nav-bar-footer {
+        width: 90%;
+        flex-direction: column;
+
+        nav {
+          flex-direction: column;
+          gap: 50px;
+
+          .menu {
+            margin: auto 50px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 50px;
+
+            a {
+              margin: auto 20px;
+            }
+          }
+        }
+        .social-media-container {
+          margin-top: 10%;
+        }
+      }
+    }
+  }
 }
