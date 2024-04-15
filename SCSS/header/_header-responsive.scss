@@ -2,14 +2,16 @@
  * FILE RESPONSIVE DESIGN HEADER
  */
 
-// Desktop:
-@media screen and (max-width: 1440px) {
-}
-
-// Tablet:
-@media screen and (max-width: 768px) {
-}
-
 // Mobile:
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
+  header {
+    .nav-bar-header-frame {
+      width: 90%;
+    }
+    .nav-bar-header {
+      .menu {
+        margin: auto 0px;
+      }
+    }
+  }
 }

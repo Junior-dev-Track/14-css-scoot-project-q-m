@@ -6,7 +6,7 @@ let lastScrollTop = null;
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
   const dimensionNavBar = 96.6;
-  const screenWidth = 1000;
+  const screenWidth = 768;
 
   let positionScrollY = window.scrollY;
   let responsive = matchMedia(`(max-width: ${screenWidth}px)`).matches;
@@ -27,3 +27,31 @@ window.addEventListener("scroll", () => {
 /*
  * EFFECT CONTAINER FAQS
  */
+const cardAnswers = document.querySelectorAll(".card-answers");
+
+let lastTagAnswer = null;
+let lastTagArrow = null;
+
+cardAnswers.forEach((card) => {
+  const tagAnswer = card.querySelector("p.answer");
+  const tagArrow = card.querySelector("img.arrow");
+
+  if (tagAnswer) {
+    card.addEventListener("click", () => {
+      if (lastTagAnswer && lastTagAnswer !== tagAnswer) {
+        lastTagAnswer.style.display = "none";
+        if (lastTagArrow) {
+          lastTagArrow.classList.remove("rotated");
+        }
+      }
+
+      tagAnswer.style.display =
+        tagAnswer.style.display === "block" ? "none" : "block";
+
+      tagArrow.classList.toggle("rotated");
+
+      lastTagAnswer = tagAnswer;
+      lastTagArrow = tagArrow;
+    });
+  }
+});

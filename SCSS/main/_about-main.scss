@@ -248,15 +248,21 @@ main {
               justify-content: space-between;
               font-size: 24px;
 
-              img {
+              img.arrow {
                 width: 32px;
                 height: 16px;
                 rotate: 90deg;
+                transition: 0.5s;
+              }
+
+              img.arrow.rotated {
+                transition: 0.5s;
+                transform: rotate(180deg);
               }
             }
           }
 
-          p {
+          p.answer {
             display: none;
             margin-top: 35px;
             font-size: 15px;
